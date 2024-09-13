@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: #09ff00;
+}
+
+h2 {
+    text-align: center;
+    color: #09ff00;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #000000;
+    border: 3px solid #09ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #09ff00(0, 0, 0, 0.1);
+    color: antiquewhite;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="value"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #09ff00;
+    width: 100%;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5    px;
+  }
+  
+  .form-group input[type="radio"],
+  .form-group input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .form-group input[type="radio"] + label,
+  .form-group input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #09ff00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #09ff00;
+  }
+
