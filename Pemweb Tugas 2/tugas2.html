@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambahkan data entitas</title>
+    <link rel="stylesheet" href="tugas2.css">
+</head>
+<body>
+    <h1>Tambahkan data entitas</h1>
+    <form id="registrationForm">
+        <label for="Nama">Nama:</label>
+        <input type="text" id="Nama" required>
+
+        <label for="NIM">NIM:</label>
+        <input type="text" id="NIM" required>
+
+        <label for="Kelas">Kelas:</label>
+        <input type="text" id="Kelas" required>
+
+        <label for="Alamat">Alamat:</label>
+        <textarea id="Alamat" required></textarea>
+
+        <button type="submit" id="submitButton" disabled>kirim</button>
+    </form>
+
+    <h2>Data yang telah diinput</h2>
+    <table id="dataTable">
+        <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Kelas</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+    </table>
+    <script src="tugas2.js"></script>
+</body>
+</html>
