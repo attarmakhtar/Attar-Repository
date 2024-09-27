@@ -1,0 +1,116 @@
+/* Styling untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling untuk container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styling untuk judul */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styling untuk header tabel */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; /* Menambahkan kursor pointer saat di hover */
+}
+
+/* Styling untuk isi tabel */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center ;
+}
+
+/* Styling untuk baris ganjil */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Styling untuk baris genap */
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Styling untuk animasi header saat di klik */
+th:active {
+    transform: scale(1.1); /* Mengubah ukuran saat diklik */
+    transition: transform 0.2s ease; /* Transisi saat mengubah ukuran */
+}
+
+/* Mengubah warna saat diklik */
+th.clicked {
+    background-color: #0056b3; /* Warna baru saat diklik */
+    transition: background-color 0.3s ease; /* Transisi perubahan warna */
+}
+
+/* Efek bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Menggunakan animasi bounce saat header diklik */
+th.bounce {
+    animation: bounce 0.5s;
+}
+
+/* Styling untuk hyperlink "Klik Disini" */
+a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #007bff; /* Warna default */
+    transition: color 0.3s ease; /* Transisi perubahan warna */
+}
+
+/* Styling saat mouse berada di atas hyperlink */
+a:hover {
+    color: green; /* Mengubah warna menjadi hijau saat hover */
+}
+
+/* Definisikan animasi membesar */
+@keyframes grow {
+    0% {
+        transform: scale(1); /* Ukuran awal */
+    }
+    100% {
+        transform: scale(1.5); /* Ukuran saat membesar */
+    }
+}
+
+/* Efek saat mouse berada di atas teks */
+h1:hover {
+    animation: grow 0.5s forwards; /* Jalankan animasi saat hover */
+}
